@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive HTML Playground</title>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h1>🌐 My Interactive HTML Page</h1>
+    <ul>
+      <li><a href="#form">Form Section</a></li>
+      <li><a href="#media">Media Section</a></li>
+      <li><a href="#details">Details Section</a></li>
+      <li><a href="#table">Table Section</a></li>
+    </ul>
+    <hr>
+  </nav>
+
+  <!-- Form Section -->
+  <section id="form">
+    <h2>📝 Interactive Form</h2>
+    <form>
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="color">Pick a color:</label>
+      <input type="color" id="color" name="color"><br><br>
+
+      <label for="range">Rate this page (1-10):</label>
+      <input type="range" id="range" name="range" min="1" max="10"><br><br>
+
+      <label for="date">Choose a date:</label>
+      <input type="date" id="date" name="date"><br><br>
+
+      <label for="file">Upload a file:</label>
+      <input type="file" id="file" name="file"><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+    <hr>
+  </section>
+
+  <!-- Media Section -->
+  <section id="media">
+    <h2>🎵 Multimedia</h2>
+    <p>Play some audio:</p>
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>Watch a video:</p>
+    <video controls width="400">
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+    <hr>
+  </section>
+
+  <!-- Details Section -->
+  <section id="details">
+    <h2>📂 Expandable Details</h2>
+    <details>
+      <summary>Click to reveal hidden content</summary>
+      <p>This is some hidden text that appears when you expand the details element. HTML can do this without JavaScript!</p>
+    </details>
+
+    <details>
+      <summary>Fun Fact</summary>
+      <p>HTML5 introduced many interactive elements like <code>&lt;details&gt;</code>, <code>&lt;dialog&gt;</code>, and form controls.</p>
+    </details>
+    <hr>
+  </section>
+
+  <!-- Table Section -->
+  <section id="table">
+    <h2>📊 Interactive Table</h2>
+    <table border="1" cellpadding="10">
+      <caption>User Preferences</caption>
+      <tr>
+        <th>Name</th>
+        <th>Favorite Color</th>
+        <th>Rating</th>
+      </tr>
+      <tr>
+        <td>Adhi</td>
+        <td>Blue</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>Sam</td>
+        <td>Green</td>
+        <td>7</td>
+      </tr>
+    </table>
+    <hr>
+  </section>
+
+  <!-- Dialog Section -->
+  <section id="dialog">
+    <h2>💬 Dialog Box</h2>
+    <dialog open>
+      <p>This is a dialog element. It can pop up messages without JavaScript!</p>
+      <button>Close</button>
+    </dialog>
+  </section>
+
+</body>
+</html>
