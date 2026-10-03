@@ -1,14 +1,8 @@
-const read = require("readline");
-const rl= read.createInterface({
-    input:process.stdin,
-    output:process.stdout
-});
-rl.question("enter:",function(input){let num= Number(input);
-    if(num%2==0){console.log("even");}
-    else{console.log("odd");}
-    for(let i=1;i<=10;i++){
-    console.log("\n",i);
+function reverse(str){
+    let string="";
+    for(let i=str.length-1;i>=0;i--){
+        string+=str[i];
     }
-    rl.close();
-});
-//this is a for loop to print 1 to 10
+    return string;
+}
+console.log(reverse("esaki"));
