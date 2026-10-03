@@ -6,5 +6,9 @@ const rl= read.createInterface({
 rl.question("enter:",function(input){let num= Number(input);
     if(num%2==0){console.log("even");}
     else{console.log("odd");}
+    for(let i=1;i<=10;i++){
+    console.log("\n",i);
+    }
     rl.close();
 });
+//this is a for loop to print 1 to 10
