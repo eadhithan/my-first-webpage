@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+</head>
+
+<body>
+    <center>
+        <div id="display">0</div>
+    </center>
+    <center><button id="add">Increment</button>
+        <button id="sub">Decrement</button>
+        <button id="reset">Reset</button>
+    </center>
+    <script>
+        let count = 0;
+        const display = document.getElementById('display');
+        document.getElementById('add').addEventListener('click', () => {
+            count++;
+            display.textContent = count;
+        });
+        document.getElementById('sub').addEventListener('click', () => {
+            if (count > 0) count--;
+            display.textContent = count;
+        });
+        document.getElementById('reset').addEventListener('click', () => {
+            count = 0;
+            display.textContent = count;
+        });
+    </script>
+
+</body>
+
+</html>
